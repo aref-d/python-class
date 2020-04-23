@@ -1,0 +1,32 @@
+#>>>>>>>>>>>>>>>E5-1
+def julian_date (d , m , y):
+        days = [31 , 28 , 31 , 30 , 31 , 31 , 31 , 30 , 31 , 30 , 31 , 30]
+days_passed = 0
+if y % 400 == 0 or (y % 4 == 0 and y%100 != 0):
+        days[1] = 29
+
+for months in days [:m-1]:
+        days_passed += months
+
+days_passed += d
+
+print (days_passed)
+
+#>>>>>>>>>>>>>>>>>E5-2
+def pos (num):
+        for i in range(num):
+                print(i)
+
+#>>>>>>>>>>>>>>>>>E5-3
+def dev (num1 , num2):
+        if (num1 % num2 == 0 or num2 % num1 == 0):
+                return 'bakhshpazir'
+        return 'gheir bakhshpazir'
+#>>>>>>>>>>>>>>>>>>E5-4
+def prime(num):
+limit = int (num ** 0.5)
+for i in range (limit):
+        if num % i == 0:
+        return "aval nist"
+
+        return "aval ast"
